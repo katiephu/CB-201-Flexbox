@@ -21,7 +21,7 @@
 
 .yellow{
     border-radius:50%;
-    background-color:rgb(76, 236, 103);
+    background-color:rgb(236, 204, 76);
     width:100px;
     height:100px;
 
@@ -29,7 +29,7 @@
 
 .green{
     border-radius:50%;
-    background-color:rgb(245, 185, 56);
+    background-color:rgb(103, 245, 56);
     width:100px;
     height:100px;
 
@@ -38,22 +38,78 @@
 nav{
     height:100px;
     display:flex;
+    position:sticky;
+    top:0;
+    z-index:100;
     align-items:end;
     justify-content:space-between;
     flex-direction:row;
+    background-color:grey;
+    padding:20px;
+    box-shadow: 5px 6px 15px rgb(75, 32, 32)
 
 }
 
-img{
-    max-height:100%
+#logo{
+    max-height:100%;
+    height:50px;
 }
 
 ul{
     list-style-type:none;
     display:flex;
-    padding:0;
+    text-decoration:none;
+
+
     gap:20px;
     /* flex-direction:row;
     justify-content:space-evenly;
     width:200px; */
+}
+
+a:after{
+    text-decoration:none
+}
+
+body{
+    margin:0px;
+}
+
+.boxes{
+    display:flex;
+    justify-content:center;
+    height:500px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+img{
+    max-width:300px;
+    gap:20px;
+    margin:20px;
+    max-height:100%;
+
+}
+
+#baldguy{
+    max-height:150px;
+
+}
+
+#video{
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    flex: 1 1 300px;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    margin:10px;
+    background-color:white;
+    border: 5px solid black;
+    border-radius:20px;
+    width:500px;
+    height:300px;
+    font-size:20px;
+    
 }
